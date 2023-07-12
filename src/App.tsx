@@ -18,13 +18,23 @@ function App() {
 		})();
 	}, []);
 
-  const handleMarkHtmlBox = () => {
-    alert('ok');
-  }
+	const handleMarkHtmlBox = () => {
+		const htmlStatusItem = techStatuses.find((m) => m.id === 'html-box');
+		if (htmlStatusItem.status === 'green') {
+			htmlStatusItem.status = 'red';
+		} else {
+			htmlStatusItem.status = 'green';
+		}
+    const _techStatuses = [...techStatuses];
+    setTechStatuses(_techStatuses);
+
+    //save it to the database
+    
+	};
 
 	return (
 		<div>
-			<button onClick={()=> handleMarkHtmlBox()}>Mark HTML</button>
+			<button onClick={() => handleMarkHtmlBox()}>Mark HTML</button>
 			<div>There are {techStatuses.length} statuses.</div>
 			<RoadmapSvg techStatuses={techStatuses} />
 		</div>
