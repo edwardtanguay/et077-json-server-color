@@ -1,20 +1,24 @@
 {
-	"techStatuses": [
-		{
-			"id": "devops",
-			"status": "red"
-		},
-		{
-			"id": "react-box",
-			"status": "red"
-		},
-		{
-			"id": "html-box",
-			"status": "green"
-		},
-		{
-			"id": "css",
-			"status": "green"
-		}
-	]
+  "techStatuses": [
+    {
+      "id": 1,
+      "idCode": "devops",
+      "status": "red"
+    },
+    {
+      "id": 2,
+      "idCode": "react-box",
+      "status": "red"
+    },
+    {
+      "idCode": "react-box",
+      "status": "green",
+      "id": 3
+    },
+    {
+      "id": 4,
+      "idCode": "css",
+      "status": "green"
+    }
+  ]
 }

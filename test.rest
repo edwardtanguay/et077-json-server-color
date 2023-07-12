@@ -1,0 +1,10 @@
+
+@url = http://localhost:4701
+
+PUT {{url}}/techStatuses/3
+content-type: application/json
+ 
+{
+    "idCode": "react-box",
+    "status": "green"
+}
