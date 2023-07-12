@@ -11,17 +11,22 @@ function App() {
 
 	useEffect(() => {
 		(async () => {
-      const response = await axios.get(url);
-      const _techStatuses = response.data;
-      setTechStatuses(_techStatuses);
-      console.log(_techStatuses);
+			const response = await axios.get(url);
+			const _techStatuses = response.data;
+			setTechStatuses(_techStatuses);
+			console.log(_techStatuses);
 		})();
 	}, []);
 
+  const handleMarkHtmlBox = () => {
+    alert('ok');
+  }
+
 	return (
 		<div>
+			<button onClick={()=> handleMarkHtmlBox()}>Mark HTML</button>
 			<div>There are {techStatuses.length} statuses.</div>
-      <RoadmapSvg techStatuses={techStatuses} />
+			<RoadmapSvg techStatuses={techStatuses} />
 		</div>
 	);
 }
