@@ -11,6 +11,10 @@
 		{
 			"id": "html",
 			"status": "finished"
+		},
+		{
+			"id": "css",
+			"status": "finished"
 		}
 	]
 }
