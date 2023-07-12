@@ -2,19 +2,19 @@
 	"techStatuses": [
 		{
 			"id": "devops",
-			"status": "doing"
+			"status": "red"
 		},
 		{
 			"id": "react",
-			"status": "finished"
+			"status": "green"
 		},
 		{
 			"id": "html",
-			"status": "finished"
+			"status": "green"
 		},
 		{
 			"id": "css",
-			"status": "finished"
+			"status": "green"
 		}
 	]
 }
