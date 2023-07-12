@@ -5,11 +5,11 @@
 			"status": "red"
 		},
 		{
-			"id": "react",
-			"status": "green"
+			"id": "react-box",
+			"status": "red"
 		},
 		{
-			"id": "html",
+			"id": "html-box",
 			"status": "green"
 		},
 		{

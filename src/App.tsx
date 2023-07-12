@@ -14,7 +14,7 @@ function App() {
       const response = await axios.get(url);
       const _techStatuses = response.data;
       setTechStatuses(_techStatuses);
-
+      console.log(_techStatuses);
 		})();
 	}, []);
 
