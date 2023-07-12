@@ -25,11 +25,13 @@ function App() {
 		} else {
 			htmlStatusItem.status = 'green';
 		}
-    const _techStatuses = [...techStatuses];
-    setTechStatuses(_techStatuses);
+		const _techStatuses = [...techStatuses];
+		setTechStatuses(_techStatuses);
 
-    //save it to the database
-    
+		//save it to the database
+		(async () => {
+			const response = await axios.put(`${url}`, _techStatuses);
+		})();
 	};
 
 	return (
